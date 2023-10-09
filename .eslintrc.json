@@ -9,7 +9,7 @@
     "plugin:react-hooks/recommended"
   ],
   "ignorePatterns": [
-    "node-moudules/",
+    "node_moudules/",
     ".next/",
     "**/*.css"
   ],
