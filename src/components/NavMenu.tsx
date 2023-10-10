@@ -1,10 +1,10 @@
 'use client';
-
 import { Session } from 'next-auth';
 
-// import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const AuthButton = ({ session }: { session: Session | null }) => {
   if (session) {
@@ -35,7 +35,20 @@ const AuthButton = ({ session }: { session: Session | null }) => {
 export default function NavMenu() {
   const { data: session } = useSession();
   return (
-    <nav className='flex w-[100vw]'>
+    <nav className='flex w-full pt-4'>
+      <Link href='/'>
+        <div className='right-2 flex gap-3 pl-6 pr-[60vw] '>
+          <Image
+            src='/nebula.jpg'
+            alt='nebula-buys'
+            width={40}
+            height={10}
+            className='rounded-lg'
+          />
+          <span className=''>Nebula Buys</span>
+        </div>
+      </Link>
+      <AiOutlineShoppingCart className='h-10 w-20 cursor-pointer rounded-xl pr-4 hover:bg-gray-200 hover:text-gray-800' />
       <AuthButton session={session} />
     </nav>
   );
