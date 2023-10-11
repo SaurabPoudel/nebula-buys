@@ -10,7 +10,10 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: 'Nebula Buys',
+  title: {
+    default: 'Nebula Buys',
+    template: `%s | Nebula Buys`,
+  },
   description: 'AI Powered ecommerce website',
 };
 

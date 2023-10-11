@@ -54,10 +54,10 @@ export default function NavMenu() {
           <Link href='/search'>All</Link>
         </li>
         <li>
-          <Link href='/search?category=electronics'>Electronics</Link>
+          <Link href='/search/electronics'>Electronics</Link>
         </li>
         <li>
-          <Link href='/search?category=clothing'>Clothing</Link>
+          <Link href='/search/clothing'>Clothing</Link>
         </li>
       </ul>
       <SearchBar />
