@@ -36,7 +36,7 @@ const AuthButton = ({ session }: { session: Session | null }) => {
 export default function NavMenu() {
   const { data: session } = useSession();
   return (
-    <nav className='flex w-full pt-4'>
+    <nav className='flex w-full items-center pt-2'>
       <div className='right-2 flex items-center gap-3 pl-6 pr-20'>
         <Link href='/' className='flex items-center'>
           <Image
@@ -49,7 +49,7 @@ export default function NavMenu() {
           <span className='ml-2'>Nebula Buys</span>
         </Link>
       </div>
-      <ul className='flex gap-3 pr-3 pt-2 text-[0.75rem]'>
+      <ul className='flex gap-3 pr-3 pt-2 text-[0.8rem]'>
         <li>
           <Link href='/search'>All</Link>
         </li>
