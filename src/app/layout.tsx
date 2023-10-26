@@ -1,8 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Orbitron } from 'next/font/google';
-
-import { NavMenu, Providers } from '../components';
+import { NavMenu, Providers, Footer } from '@/components';
 
 const orbitron = Orbitron({
   subsets: ['latin'],
@@ -29,6 +28,7 @@ export default async function RootLayout({
           <NavMenu />
           <br />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
